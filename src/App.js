@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import PigGame from "./components/PigGame";
+
+import "./App.css";
+
+const player1Init = {
+  active: true,
+  score: 0,
+  current: 0,
+  won: false,
+};
+
+const player2Init = {
+  active: false,
+  score: 0,
+  current: 0,
+  won: false,
+};
 
 function App() {
+  const [player1, setPlayer1] = useState(player1Init);
+  const [player2, setPlayer2] = useState(player2Init);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PigGame
+        onP1Active={player1.active}
+        onP1Score={player1.score}
+        onP1Current={player1.current}
+        onP2Active={player2.active}
+        onP2Score={player2.score}
+        onP2Current={player2.current}
+      />
     </div>
   );
 }
