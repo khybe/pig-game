@@ -25,16 +25,6 @@ body {
   border-radius: 12px;
 }
 
-.player {
-  background-color: rgba(255, 255, 255, 0.3);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 50%;
-  justify-content: center;
-  padding: 2rem 4rem;
-}
-
 .p1 {
   border-radius: 15px 0 0 15px;
   border-right: 0.1px solid gray;
@@ -42,40 +32,6 @@ body {
 
 .p2 {
   border-radius: 0 15px 15px 0;
-}
-
-.name,
-.score {
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.name {
-  color: rgb(54, 52, 52);
-  margin-top: 1rem;
-  letter-spacing: 3px;
-}
-
-.score {
-  margin: 0;
-  color: #c7365f;
-  font-size: 5rem;
-}
-
-.current-container {
-  background-color: #c24166;
-  color: white;
-  width: 70%;
-  max-width: 200px;
-  margin: 9.5rem auto 0;
-  padding: 2px;
-  border-radius: 12px;
-  font-size: 1.3rem;
-}
-
-.current-score {
-  font-size: 2.5rem;
-  margin: 5px;
 }
 
 .active-player {

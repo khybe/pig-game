@@ -1,11 +1,13 @@
+import styles from "./Player.module.css";
+
 const Player = (props) => {
   return (
-    <div className={`${"player"} ${props.className}`}>
-      <h2 className="name">PLAYER {props.number}</h2>
-      <p className="score">{props.score}</p>
-      <div className="current-container">
-        <p className="current-label">CURRENT</p>
-        <p className="current-score">{props.current}</p>
+    <div className={`${styles.player} ${props.className}`}>
+      <h2 className={styles.name}>PLAYER {props.number}</h2>
+      <p className={styles.score}>{props.score}</p>
+      <div className={styles["current-container"]}>
+        <p className={styles["current-label"]}>CURRENT</p>
+        <p className={styles["current-score"]}>{props.current}</p>
       </div>
     </div>
   );
