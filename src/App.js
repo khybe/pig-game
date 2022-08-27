@@ -125,16 +125,40 @@ function App() {
     }
   };
 
+  const player1Classes = player1.active
+    ? "active-player p1"
+    : player1.won
+    ? "won victor-name p1"
+    : "p1";
+
+  const player2Classes = player2.active
+    ? "active-player p2"
+    : player2.won
+    ? "won victor-name p2"
+    : "p2";
+
   return (
     <div className="App">
-      <Player number={1} score={player1.score} current={player1.current} />
-      <Controls
-        onRestart={handleRestart}
-        onShowDice={showDice}
-        onRollDice={handleRollDice}
-        onHold={handleHold}
-      />
-      <Player number={2} score={player2.score} current={player2.current} />
+      <Layout>
+        <Player
+          number={1}
+          className={player1Classes}
+          score={player1.score}
+          current={player1.current}
+        />
+        <Controls
+          onRestart={handleRestart}
+          onShowDice={showDice}
+          onRollDice={handleRollDice}
+          onHold={handleHold}
+        />
+        <Player
+          number={2}
+          className={player2Classes}
+          score={player2.score}
+          current={player2.current}
+        />
+      </Layout>
     </div>
   );
 }
