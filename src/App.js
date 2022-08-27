@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PigGame from "./components/PigGame";
+import PigGame from "./components/Layout";
 
 import "./App.css";
 
