@@ -5,6 +5,8 @@ import dice4 from "../../src/assets/dice-4.png";
 import dice5 from "../../src/assets/dice-5.png";
 import dice6 from "../../src/assets/dice-6.png";
 
+import styles from "./Controls.module.css";
+
 const Controls = (props) => {
   let dice = null;
 
@@ -29,17 +31,19 @@ const Controls = (props) => {
   }
 
   return (
-    <div className="absolute-container">
-      <div className="absolute-within-container">
-        <button className="new-game-btn" onClick={props.onRestart}>
+    <div className={styles["absolute-container"]}>
+      <div className={styles["absolute-within-container"]}>
+        <button className={styles["new-game-btn"]} onClick={props.onRestart}>
           🔄 NEW GAME
         </button>
-        {props.onShowDice && <img className="dice" src={dice} alt="Dice" />}
+        {props.onShowDice && (
+          <img className={styles.dice} src={dice} alt="Dice" />
+        )}
       </div>
-      <button className="roll-dice-btn" onClick={props.onRollDice}>
+      <button className={styles["roll-dice-btn"]} onClick={props.onRollDice}>
         🎲 ROLL DICE
       </button>
-      <button className="hold-btn" onClick={props.onHold}>
+      <button className={styles["hold-btn"]} onClick={props.onHold}>
         📥 HOLD
       </button>
     </div>
