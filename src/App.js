@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
-import PigGame from "./components/Layout";
+
+import Layout from "./components/Layout";
+import Player from "./components/Player";
+import Controls from "./components/Controls";
 
 import "./App.css";
 
@@ -124,24 +127,14 @@ function App() {
 
   return (
     <div className="App">
-      <PigGame
-        // Player 1 states:
-        player1Active={player1.active}
-        player1Score={player1.score}
-        player1Current={player1.current}
-        player1Won={player1.won}
-        // Player 2 states:
-        player2Active={player2.active}
-        player2Score={player2.score}
-        player2Current={player2.current}
-        player2Won={player2.won}
-        // Events handlers and passed attributes:
+      <Player number={1} score={player1.score} current={player1.current} />
+      <Controls
         onRestart={handleRestart}
         onShowDice={showDice}
         onRollDice={handleRollDice}
-        diceNumber={diceNumber}
         onHold={handleHold}
       />
+      <Player number={2} score={player2.score} current={player2.current} />
     </div>
   );
 }
