@@ -4,7 +4,7 @@ import Layout from "./components/Layout";
 import Player from "./components/Player";
 import Controls from "./components/Controls";
 
-import "./App.css";
+import styles from "./App.module.css";
 
 let player1Init = {
   active: true,
@@ -126,19 +126,19 @@ function App() {
   };
 
   const player1Classes = player1.active
-    ? "active-player p1"
+    ? `${styles["active-player"]} ${styles.p1}`
     : player1.won
-    ? "won victor-name p1"
-    : "p1";
+    ? `${styles.won} ${styles["victor-name"]} ${styles.p1}`
+    : styles.p1;
 
   const player2Classes = player2.active
-    ? "active-player p2"
+    ? `${styles["active-player"]} ${styles.p2}`
     : player2.won
-    ? "won victor-name p2"
-    : "p2";
+    ? `${styles.won} ${styles["victor-name"]} ${styles.p2}`
+    : styles.p2;
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Layout>
         <Player
           number={1}
