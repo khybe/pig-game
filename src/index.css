@@ -13,14 +13,3 @@ body {
   background-repeat: no-repeat;
   font-size: 16px;
 }
-
-.main-container {
-  width: 100vw;
-  max-width: 1100px;
-  height: 90vh;
-  margin: 5vh auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-}
