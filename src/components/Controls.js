@@ -1,9 +1,9 @@
-import dice1 from "../../src/assets/dice-1.png";
-import dice2 from "../../src/assets/dice-2.png";
-import dice3 from "../../src/assets/dice-3.png";
-import dice4 from "../../src/assets/dice-4.png";
-import dice5 from "../../src/assets/dice-5.png";
-import dice6 from "../../src/assets/dice-6.png";
+import dice1 from "../assets/dice-2.png";
+import dice2 from "../assets/dice-2.png";
+import dice3 from "../assets/dice-3.png";
+import dice4 from "../assets/dice-4.png";
+import dice5 from "../assets/dice-5.png";
+import dice6 from "../assets/dice-6.png";
 
 import styles from "./Controls.module.css";
 

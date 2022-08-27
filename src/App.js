@@ -148,6 +148,7 @@ function App() {
         />
         <Controls
           onRestart={handleRestart}
+          diceNumber={diceNumber}
           onShowDice={showDice}
           onRollDice={handleRollDice}
           onHold={handleHold}
