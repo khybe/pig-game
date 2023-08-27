@@ -41,7 +41,7 @@ To run this project on your local machine:
 
 1. Clone this repository.
 2. Navigate to the project directory: `cd pig-game`.
-3. Install the required dependencies: `npm install`.
+3. Install the e required dependencies: `npm install`.
 4. Start the development server: `npm start`.
 5. Open your web browser and go to `http://localhost:3000` to play the game.
 
