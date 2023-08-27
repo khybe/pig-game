@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Pig Game Practice Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the "pig-game" repository! This project was created as part of my front-end development practice, with a focus on improving my skills in JavaScript. The objective of this project was to build a digital version of the Pig Game, a classic dice game that involves strategic decision-making and luck.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The "pig-game" project involves the development of a digital Pig Game, where two players take turns rolling a dice and accumulating points. The goal is to reach a specified score before the opponent. The project progresses through various commits, each enhancing different aspects of the game.
 
-### `npm start`
+## Commit History
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Aug 27, 2022
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Passed `diceNumber` props to the `Controls` component.
+- Added modularized styles for `Layout.js`.
+- Added modularized styles for `App.js`.
+- Added modularized styles for the `Control` component.
+- Added separated styles for the `Player` component (`Player.module.css`).
+- Added conditional styling for players based on their condition within the game.
+- Imported and rendered the `Player` and `Controls` components within `App.js`.
+- Transformed the `PigGame` component into `Layout`.
 
-### `npm test`
+### Aug 22, 2022
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Completed JavaScript (state management of Pig Game and its logic).
 
-### `npm run build`
+### Aug 20, 2022
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Completed Pig Game HTML & CSS with initialized state for players.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Jun 24, 2022
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Initialized the project using Create React App.
 
-### `npm run eject`
+## Play the Game
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+You can play the Pig Game online by visiting the following link: [Play Pig Game](https://pig-game-bay.vercel.app/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run this project on your local machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone this repository.
+2. Navigate to the project directory: `cd pig-game`.
+3. Install the required dependencies: `npm install`.
+4. Start the development server: `npm start`.
+5. Open your web browser and go to `http://localhost:3000` to play the game.
 
-## Learn More
+## Additional Resources
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For additional resources on front-end development and JavaScript, you may find the following links helpful:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [MDN Web Docs](https://developer.mozilla.org/): Comprehensive documentation on web technologies.
+- [React Documentation](https://reactjs.org/docs/getting-started.html): Official documentation for the React framework.
+- [JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript): In-depth information about JavaScript.
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This project is open-source and is available under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### Analyzing the Bundle Size
+Feel free to explore the commit history to understand the evolution of the project and how different features were added. If you have any questions or suggestions, don't hesitate to create an issue.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Enjoy playing the Pig Game and have fun strategizing and rolling the dice!**
